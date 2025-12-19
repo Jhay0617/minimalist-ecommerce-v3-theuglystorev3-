@@ -3,7 +3,7 @@
 ![Version 3](./screenshots/desktopSize.png)
 ![Version 3](./screenshots/tabletSize.png)
 ![Version 3](./screenshots/mobileSize.png)
-![Version 3](./screenshots/drawerOpen.png)
+![Version 3](./screenshots/drawerOpen_.png)
 
 ## ✨ Key Features
 - **Typographic Hero:** A bold, no-image hero section for a premium aesthetic.
