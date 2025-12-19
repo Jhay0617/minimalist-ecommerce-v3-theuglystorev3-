@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+p,
+span,
+button,
+label,
+input,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h5,
+h4,
+a {
+  font-family: "Roboto", sans-serif;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #242424;
+}
+button {
+  cursor: pointer;
+  background-color: #242424;
+  color: #c4c4c4;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #000000; /* Darken slightly on hover */
+    color: #ffffff; /* Brighten text */
+    transform: translateY(-2px); /* 2025 "Lift" effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #242424;
+  border-bottom-color: #c4c4c4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
