@@ -1,8 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {
   decreasing,
   increasing,
   removeItem,
+  safeFetch,
   toggleItemByArr,
 } from "../utils/cartUtils";
 
@@ -12,6 +13,29 @@ const initialState = {
   order: [],
   wishlist: [],
 };
+
+export const syncCartPrices = createAsyncThunk(
+  "cart/syncPrices",
+  async (cartItems) => {
+    // 1. Get the latest data from the internet
+    const latestProducts = await safeFetch(
+      "'https://fakestoreapi.com/products"
+    );
+
+    // 2. Logic: Match cart items with latest prices
+    return cartItems.map((cartItem) => {
+      const officialProduct = latestProducts.find((p) => p.id === cartItem.id);
+
+      return {
+        ...cartItem,
+        price: officialProduct ? officialProduct.price : cartItem.price,
+        // Calculate new total based on official price
+        totalPrice:
+          (officialProduct?.price || cartItem.price) * cartItem.quantity,
+      };
+    });
+  }
+);
 
 const cartSlice = createSlice({
   name: "cart",

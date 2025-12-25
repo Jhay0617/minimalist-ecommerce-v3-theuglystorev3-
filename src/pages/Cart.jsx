@@ -5,14 +5,18 @@ import { useNavigate } from "react-router-dom";
 
 import { useCheckOutDetails } from "../utils/useCheckOutDetails";
 import Empty from "../ui/CartEmpty";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Modal from "../ui/Modal";
 import CheckOut from "../features/CheckOut";
 import CartItemsList from "../ui/CartItemsList";
+import { useDispatch } from "react-redux";
+import { syncCartPrices } from "../store/cartSlice";
 
 function Cart() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+  const hasSynced = useRef(false);
   const {
     discount,
     setDiscount,
@@ -23,7 +27,12 @@ function Cart() {
     deliveryFee,
     subTotal,
   } = useCheckOutDetails();
-
+  useEffect(() => {
+    if (cart.length > 0) {
+      dispatch(syncCartPrices(cart));
+      hasSynced.current = true;
+    }
+  }, [dispatch, cart]);
   if (cart.length === 0)
     return (
       <Empty>

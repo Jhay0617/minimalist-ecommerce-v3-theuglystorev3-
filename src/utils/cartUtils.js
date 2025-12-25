@@ -31,3 +31,14 @@ export const toggleItemByArr = (state, array, action) => {
     state[array].push(action.payload);
   }
 };
+export const safeFetch = async (URL) => {
+  try {
+    const res = await fetch(URL);
+
+    if (!res.ok) throw new Error("Failed to fetch the data");
+
+    return await res.json();
+  } catch (err) {
+    throw new Error(err.message);
+  }
+};
