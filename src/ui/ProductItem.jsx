@@ -10,7 +10,7 @@ const ProductItem = styled.div`
   flex-direction: column;
   gap: 12px;
   transition: all 0.3s ease;
-  height: 100%; /* Ensures equal height in a grid */
+  height: 100%;
   animation: test 1s ease-in-out forwards;
   &:hover {
     border-color: #c4c4c4;
@@ -23,7 +23,7 @@ const ProductItem = styled.div`
     font-size: 1.1rem;
     margin: 0;
     line-height: 1.2;
-    /* Prevent long titles from breaking the grid */
+
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -31,10 +31,10 @@ const ProductItem = styled.div`
   }
 
   p {
-    color: #888888; /* Slightly darker than c4c4c4 for readability */
+    color: #888888; 
     font-size: 0.85rem;
     margin: 0;
-    flex-grow: 1; /* Pushes price and buttons to the bottom */
+    flex-grow: 1; 
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;

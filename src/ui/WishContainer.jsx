@@ -8,7 +8,7 @@ const WishContainer = styled(motion.div)`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  position: relative; /* For the absolute positioned trash icon */
+  position: relative;
   transition: all 0.3s ease;
   width: 100%;
 
@@ -22,7 +22,6 @@ const WishContainer = styled(motion.div)`
     font-weight: 600;
     color: #242424;
     margin: 12px 0 4px 0;
-    /* Keeps all cards the same height */
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;

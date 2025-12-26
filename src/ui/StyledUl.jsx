@@ -6,37 +6,17 @@ const StyledUl = styled.ul`
   font-size: 20px;
   list-style: none;
 
-  /* a {
-    color: black;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.2s ease;
+ 
 
-    &:hover {
-      background-color: #242424;
-      color: #adadad;
-    }
 
-    /* NavLink automatically applies this class when active */
-  /* &.active {
-      background-color: #242424;
-      color: #adadad;
-    } */
-  /* }  */
-
-  /* --- Tablet/Mobile Drawer --- */
   @media (max-width: 992px) {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden off-screen */
+    right: -100%; 
     width: 280px;
     height: 100vh;
     background: rgba(242, 242, 242, 0.95);
-    backdrop-filter: blur(10px); /* 2025 Glassmorphism */
+    backdrop-filter: blur(10px); 
     flex-direction: column;
     padding: 100px 30px;
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,7 +24,7 @@ const StyledUl = styled.ul`
     z-index: 1000;
 
     &.open {
-      right: 0; /* Slide in */
+      right: 0; 
     }
 
     a {

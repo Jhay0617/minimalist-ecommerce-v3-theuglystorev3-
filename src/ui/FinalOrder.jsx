@@ -29,7 +29,7 @@ const FinalOrder = styled.div`
       font-size: 14px;
       color: #242424;
       margin: 0 0 4px 0;
-      /* Truncate long titles */
+
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;

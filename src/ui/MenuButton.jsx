@@ -6,7 +6,7 @@ const MenuButton = styled.button`
   border: none;
   cursor: pointer;
   padding: 8px;
-  z-index: 1001; /* Above the drawer */
+  z-index: 1001; 
 
   @media (max-width: 992px) {
     display: flex;

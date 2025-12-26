@@ -11,7 +11,7 @@ const ImageDesc = styled.div`
   }
   p {
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Show exactly 3 lines */
+    -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

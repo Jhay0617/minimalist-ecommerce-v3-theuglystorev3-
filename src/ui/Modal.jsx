@@ -37,7 +37,7 @@ const Content = styled.div`
   overflow-y: auto;
   padding: 40px;
 
-  /* Scrollbar styling for a cleaner 2025 look */
+  
   &::-webkit-scrollbar {
     width: 6px;
   }
@@ -47,12 +47,12 @@ const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 100vh; /* Full screen on mobile */
-    border-radius: 0; /* Remove rounding for "app-like" feel */
-    padding: 60px 20px 20px 20px; /* More top padding for the close button */
+    height: 100vh; 
+    border-radius: 0; 
+    padding: 60px 20px 20px 20px; 
   }
 
-  /* Animation for sliding up */
+
   animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   @keyframes slideUp {
@@ -66,7 +66,6 @@ const Content = styled.div`
     }
   }
 
-  /* Close Button in top right */
   .close-button {
     position: absolute;
     top: 24px;

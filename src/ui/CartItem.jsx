@@ -23,18 +23,38 @@ const CartItem = styled.div`
     font-size: 0.8rem;
     max-width: 200px;
   }
-  /* First div (Image & Title) */
+
   & > div:first-child {
     display: flex;
     align-items: center;
     gap: 1rem;
-    flex: 2; /* Takes more space */
+    flex: 2;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      text-align: center;
+      input {
+        align-self: flex-start;
+      }
+      img {
+        width: 120px;
+        height: 120px;
+      }
+      p {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
   }
 
-  /* Last div (Price & Remove) */
   & > div:last-child {
     text-align: right;
     flex: 1;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 `;
 

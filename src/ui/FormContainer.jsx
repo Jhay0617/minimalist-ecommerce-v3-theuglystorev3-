@@ -7,23 +7,23 @@ const FormContainer = styled.div`
   width: 100%;
 
   @media (max-width: 1024px) {
-    grid-template-columns: 1fr; /* Stack columns vertically */
+    grid-template-columns: 1fr; 
     gap: 30px;
   }
 
-  /* Reverse order on mobile so user sees Form BEFORE Summary */
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
 
     .checkout-form-side {
-      order: 1; /* Form first */
+      order: 1; 
     }
 
     .order-summary-side {
-      order: 2; /* Summary second */
+      order: 2; 
       background: #f9f9f9;
-      margin: 0 -20px; /* Bleed to edges of mobile screen */
+      margin: 0 -20px; 
       padding: 20px;
     }
   }

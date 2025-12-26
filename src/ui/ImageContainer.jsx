@@ -7,7 +7,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9; /* Light contrast for the image */
+  background-color: #f9f9f9; 
   border-radius: 12px;
   overflow: hidden;
 

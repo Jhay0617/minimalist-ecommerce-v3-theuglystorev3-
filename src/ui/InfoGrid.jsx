@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const InfoGrid = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Desktop: Address left, Action right */
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
   background: #ffffff;
   padding: 24px;

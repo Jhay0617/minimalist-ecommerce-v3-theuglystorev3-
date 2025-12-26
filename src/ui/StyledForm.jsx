@@ -3,13 +3,13 @@ import styled from "styled-components";
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Consistent spacing between groups */
+  gap: 20px;
 
   label {
     font-size: 14px;
     font-weight: 600;
     color: #242424;
-    margin-bottom: -12px; /* Pulls label closer to its input */
+    margin-bottom: -12px;
     display: block;
   }
 

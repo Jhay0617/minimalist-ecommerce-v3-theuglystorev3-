@@ -17,7 +17,7 @@ const Empty = styled.div`
     width: 150px;
     height: auto;
     margin-bottom: 30px;
-    opacity: 0.6; /* Keeps the minimalist vibe */
+    opacity: 0.6; 
   }
 
   h2 {
@@ -31,7 +31,7 @@ const Empty = styled.div`
     color: #fff;
     padding: 14px 32px;
     border: none;
-    border-radius: 50px; /* Pill shape for 2025 look */
+    border-radius: 50px; 
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;

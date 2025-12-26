@@ -48,11 +48,11 @@ const OrderItem = styled.div`
     }
 
     small {
-      display: block; /* Ensures it stays under the price */
+      display: block;
     }
   }
 
-  /* Mobile adjustment */
+
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: flex-start;
