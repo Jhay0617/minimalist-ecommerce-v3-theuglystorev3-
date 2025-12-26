@@ -92,3 +92,14 @@ button {
   align-items: center;
   gap: 12px;
 }
+.nameContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+@media (max-width: 650px) {
+  .nameContainer {
+    grid-template-columns: 1fr;
+  }
+}

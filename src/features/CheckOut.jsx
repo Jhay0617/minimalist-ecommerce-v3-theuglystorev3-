@@ -56,14 +56,7 @@ function CheckOut() {
         <div className="checkout-form-side">
           <h1 style={{ marginBottom: "24px" }}>Checkout</h1>
           <StyledForm onSubmit={handleSubmit(onSubmit)}>
-            {/* Shipping Group */}
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                gap: "15px",
-              }}
-            >
+            <div className="nameContainer">
               <div
                 style={{
                   display: "flex",
@@ -117,7 +110,7 @@ function CheckOut() {
               id="number"
               {...register("number", { required: "Required" })}
             />
-            {/* Payment Method Section */}
+
             <h3 style={{ marginTop: "20px", fontSize: "16px" }}>
               Payment Method
             </h3>
