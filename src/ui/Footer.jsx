@@ -19,7 +19,7 @@ function Footer() {
       </div>
 
       <div className="contact-links">
-        <a href="github.com" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Jhay0617" target="_blank" rel="noreferrer">
           <Github size={20} />
           GitHub
         </a>
